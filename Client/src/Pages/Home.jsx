@@ -7,25 +7,37 @@ const Home = () => {
         id: 1,
         title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-        img: "https://images.pexels.com/photos/7008010/pexels-photo-7008010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        img: "https://images.pexels.com/photos/17117475/pexels-photo-17117475/free-photo-of-roses-in-vase.jpeg?auto=compress&cs=tinysrgb&w=600",
       },
       {
         id: 2,
         title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-        img: "https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        img: "https://images.pexels.com/photos/9168325/pexels-photo-9168325.jpeg?auto=compress&cs=tinysrgb&w=600",
       },
       {
         id: 3,
         title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-        img: "https://images.pexels.com/photos/4230630/pexels-photo-4230630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        img: "https://images.pexels.com/photos/1122626/pexels-photo-1122626.jpeg?auto=compress&cs=tinysrgb&w=600",
       },
       {
         id: 4,
         title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
         desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-        img: "https://images.pexels.com/photos/6157049/pexels-photo-6157049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        img: "https://images.pexels.com/photos/18387503/pexels-photo-18387503/free-photo-of-man-taking-picture-of-woman-with-sunflowers-on-street.jpeg?auto=compress&cs=tinysrgb&w=600",
+      },
+      {
+        id: 4,
+        title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
+        img: "https://images.pexels.com/photos/18052418/pexels-photo-18052418/free-photo-of-a-man-taking-a-picture-of-a-woman-holding-a-bouquet-of-sunflowers.jpeg?auto=compress&cs=tinysrgb&w=600",
+      },
+      {
+        id: 4,
+        title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
+        img: "https://images.pexels.com/photos/19937121/pexels-photo-19937121/free-photo-of-woman-holding-sunflowers.jpeg?auto=compress&cs=tinysrgb&w=600",
       },
     ];
   

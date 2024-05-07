@@ -80,6 +80,7 @@ $lightGreen: #b9e7e7;
                 img {
                   width: 120px;
                   border-radius: 50%;
+                  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
                 }
               }
 
@@ -156,6 +157,7 @@ $lightGreen: #b9e7e7;
             .img{
                 flex: 2;
                 position: relative;
+                box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
 
                 &::after{
                     content: "";
@@ -174,6 +176,7 @@ $lightGreen: #b9e7e7;
                     width: 100%;
                     max-height: 400px;
                     object-fit: cover;
+                    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
                 }
             }  
             .content{
