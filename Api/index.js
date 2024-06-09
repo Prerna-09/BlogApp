@@ -3,11 +3,15 @@ import cors from "cors"
 import authRoutes from "./routes/auth.js"
 import userRoutes from "./routes/users.js"
 import postRoutes from "./routes/posts.js"
+import artistRoutes from "./routes/artists.js"
+import artistDetailRoutes from "./routes/artistdetails.js"
 import cookieParser from "cookie-parser"
 
 
-
 const app= express()
+
+
+
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Credentials", true);
     next();
@@ -30,6 +34,10 @@ app.use(cookieParser())
 app.use("/api/auth" , authRoutes)
 app.use("/api/users" , userRoutes)
 app.use("/api/posts" , postRoutes)
+app.use("/api/artist", artistRoutes)
+app.use("/api/artistDetail", artistDetailRoutes)
+
+
 
 
 

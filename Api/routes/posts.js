@@ -1,10 +1,19 @@
 import express from "express"
-// import { register} from "../Controller/auth.js"
-// import { addPost } from "../Controller/post.js"
+import {
+    addPost,
+    deletePost,
+    updatePost,
+    getPost,
+    getPosts
+} from "../Controller/post.js"
+
 
 const router = express.Router()
-// router.post("/register" , register)
+router.get("/", getPosts);
+router.get("/:id",getPost);
+router.post("/",addPost)
+router.delete("/:id ",deletePost)
+router.put("/:id", updatePost)
 
-// router.get("/test", addPost)
 
 export default router

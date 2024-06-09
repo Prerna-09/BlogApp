@@ -7,25 +7,25 @@ const Menu = () => {
           id: 1,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
           desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-          img: "https://images.pexels.com/photos/7008010/pexels-photo-7008010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          img: "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600",
         },
         {
           id: 2,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
           desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-          img: "https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          img: "https://i.pinimg.com/236x/22/06/1b/22061b8d455c9dd581e6235f08779aee.jpg",
         },
         {
           id: 3,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
           desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-          img: "https://images.pexels.com/photos/4230630/pexels-photo-4230630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          img: "https://i.pinimg.com/236x/1c/98/c3/1c98c363e96937b76e58f61839bb2752.jpg",
         },
         {
           id: 4,
           title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
           desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-          img: "https://images.pexels.com/photos/6157049/pexels-photo-6157049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          img: "https://i.pinimg.com/236x/2a/6b/bb/2a6bbb6053df272f1d35149211ec0e1a.jpg",
         },
       ];
     

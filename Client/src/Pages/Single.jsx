@@ -1,51 +1,84 @@
 import Edit from "../assets/edit.png"
 import Delete from "../assets/delete.png"
-import Profile from "../assets/profile.jpg"
-import Banner from "../assets/banner.jpg"
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Menu from "../Components/Menu";
+import axios from "axios";
+import moment from "moment"
+import { useContext } from "react";
+import { AuthContext } from "./AuthContext";
+import { useState , useEffect } from "react";
+
 
 
 
 
 
 const Single = () => {
+
+  const[post, setPost] = useState([])
+
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  const postId = location.pathname.split("/")[2]
+
+  const currentUser = useContext(AuthContext)
+ 
+
+
+  useEffect(()=>{
+    const fetchData = async ()=>{
+      try{
+        const res = await axios.get(`http://localhost:8800/api/posts/${postId}`);
+        setPost(res.data)
+
+      }catch(err){
+        console.log(err)
+      }
+    }
+    fetchData();
+  },[postId]);
+  console.log(postId)
+
+ 
+
+
+  const handleDelete = async ()=>{
+  
+  await axios.delete(`http://localhost:8800/api/posts/${postId}`)
+  .then((response)=>{
+    console.log(response)
+  })
+  }
+
+
+  
+
   return (
     <div className='single'>
       <div className='content'>
-        <img src={Banner} alt=""/>
+
+        <img src={post?.img} alt=""/>
+
         <div className='user'>
-          <img src={Profile} alt=""/>
+          {post.userImg && 
+          <img src={post.userImg} alt=""/>}
           <div className='info'>
-            <span>John</span>
-            <p>Posted 2 days ago</p>
+            <span>{post.username}</span>
+            <p>Posted {moment(post.date).fromNow()}</p>
           </div>
+          {currentUser.username = post.username && 
           <div className='edit'>
             <Link to={`/write?edit=2`}>
             <img src={Edit} alt=""/>
             </Link>
            
-            <img src={Delete} alt=""/>
-          </div>
+            <img onClick={handleDelete} src={Delete} alt=""/>
+          </div>}
         </div>
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus amet numquam esse excepturi iure expedita exercitationem sed </h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, explicabo? Hic nemo necessitatibus quae placeat sapiente eum animi provident asperiores. Ea modi blanditiis iste voluptates! Assumenda aperiam cupiditate quis voluptatum.
-
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cumque odit deserunt illum quisquam cum sequi nostrum, fuga est, sapiente veritatis obcaecati accusamus magni aut! Praesentium recusandae deserunt explicabo saepe.
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus a doloribus maiores omnis quasi? Optio quis suscipit esse illo amet corrupti quidem accusamus beatae dolorem, totam, doloremque eveniet ea ducimus.</p>
-          </p>
-
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cumque odit deserunt illum quisquam cum sequi nostrum, fuga est, sapiente veritatis obcaecati accusamus magni aut! Praesentium recusandae deserunt explicabo saepe.
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus a doloribus maiores omnis quasi? Optio quis suscipit esse illo amet corrupti quidem accusamus beatae dolorem, totam, doloremque eveniet ea ducimus.
-          </p>
-
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cumque odit deserunt illum quisquam cum sequi nostrum, fuga est, sapiente veritatis obcaecati accusamus magni aut! Praesentium recusandae deserunt explicabo saepe.
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus a doloribus maiores omnis quasi? Optio quis suscipit esse illo amet corrupti quidem accusamus beatae dolorem, totam, doloremque eveniet ea ducimus.</p>
-          </p>
-        </p>
+        <h1>{post.title}</h1>
+        {post.desc}
+        
 
       </div>
   <Menu/>

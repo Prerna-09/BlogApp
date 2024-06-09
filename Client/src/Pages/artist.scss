@@ -1,0 +1,91 @@
+
+.artists-container{
+    margin-top: 10px;
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+   
+   
+
+
+    .card-container{
+        margin-top: 10px;
+        width: 180px;
+        height: 250px;
+        border: 1px solid black;
+        border-radius: 5px;
+
+        .card-img{
+            width: 180px;
+            height: 180px;
+           
+        }
+
+        .card-body{
+
+            display: flex;
+            flex-direction: column;
+             h5{
+          margin-left: 20px;
+          font-size: 20px;
+             }
+             p{
+                margin-left: 5px;
+                font-size: 12px;
+            
+             }
+
+             .card-link{
+             margin-left: 150px;
+             margin-top: -20px;
+             }
+           
+        }
+    
+    }
+}
+
+
+
+
+
+ // single artist 
+
+.artist-container{
+    margin: 20px;
+    .artist-item-container{
+        margin: 20px;
+
+
+
+        .top-container{
+
+            img{
+                width: 300px;
+                height: 300px;
+                border-radius: 10px;
+                margin-left: 300px;
+            }
+
+            p{
+                margin-left: 100px;  
+            }
+
+        }
+
+
+        .bottom-container{
+            display: flex;
+            img{
+                width: 300px;
+                height: 300px;
+                margin-left: 100px;
+            }
+            p{
+                margin-left: 100px;  
+            }
+
+        }
+
+    }
+}
